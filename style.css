@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #bfd7e4;
+}
+
+body::before {
+  content: '';
+  background: #293241;
+  z-index: -1;
+  position: absolute;
+
+  width: 100%;
+  height: 465px;
+  top: 0;
+  left: 0;
+}
+
+.fieldset legend,
+button,
+h1,
+h2,
+legend {
+  font-family: 'Staatliches', cursive;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 107px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  background: #f67669;
+  width: 750px;
+  height: 133px;
+  border-radius: 20px 20px 0 0;
+
+  color: #ffffff;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+form {
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 750px;
+  margin: auto;
+  margin-bottom: 392px;
+
+  border-radius: 0 0 20px 20px;
+  padding: 31px 64px 63px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 35px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  text-align: center;
+}
+
+fieldset legend {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 34px;
+  color: #253b51;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 input {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 55px;
+}
+
+.input-wrapper input,
+.input-wrapper-email input,
+.input-wrapper select,
+.input-wrapper textarea,
+.checkbox-wrapper input {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+#mentor {
+  display: flex;
+  justify-items: left;
+}
+
+#feedback {
+  display: flex;
+  justify-items: left;
+}
+
+.input-wrapper select {
+  width: 300px;
+  height: 55px;
+  margin-top: 8px;
+  margin-bottom: 31px;
+}
+
+.input-wrapper textarea {
+  margin-top: 8px;
+  width: 608px;
+  height: 166px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+
+.input-wrapper span,
+.input-wrapper-email span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper-email input {
+  width: 100%;
+  height: 55px;
+  margin-top: 8px;
+}
+
+.col-3 {
+  margin-top: 31px;
+  display: flex;
+  gap: 10px;
+}
+
+.col-3 input {
+  margin-top: 8px;
+  width: 100%;
+  height: 55px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 300px;
+  height: 55px;
+}
+
+.col-3 > div:nth-child(2) {
+  width: 140px;
+  margin-left: 12px;
+}
+
+.col-3 > div:nth-child(3) {
+  width: 140px;
+}
+
+button {
+  background: #f67669;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 100%;
+  height: 51px;
+  margin-bottom: 64px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input,
+textarea {
+  padding: 5px;
+}
